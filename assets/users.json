@@ -1,0 +1,5 @@
+// [IRC Nick, Email, Commit Access Level]
+var users = [
+ ['Akshay Katyal', 'ktyaks@gmail.com', MrDHat, CSE, 2014, 'Firefox OS, Bower, Profile in the Cloud'],
+ ['Anmol Ahuja', 'anmolan@gmail.com', DarthCodus, CSE, 2015, 'Amarok']
+];
