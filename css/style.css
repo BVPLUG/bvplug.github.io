@@ -1,0 +1,51 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    color: #C4B8B8;
+    background-color: #161616;
+}
+h2 {
+    color: #C47C18;
+}
+a:hover {
+    text-decoration: none;
+}
+h2.subheading:hover {
+    color: #FF9605;
+    transition: all 0.5s;
+}
+.navbar-translucent {
+    opacity: 0.9;
+}
+.banner {
+    /*background: -webkit-linear-gradient(324deg, rgb(36, 43, 53) 0%, rgb(11, 12, 16) 100%);
+    background: -o-linear-gradient(324deg, rgb(36, 43, 53) 0%, rgb(11, 12, 16) 100%);
+    background: -ms-linear-gradient(324deg, rgb(36, 43, 53) 0%, rgb(11, 12, 16) 100%);
+    background: -moz-linear-gradient(324deg, rgb(36, 43, 53) 0%, rgb(11, 12, 16) 100%);
+    background: linear-gradient(126deg, rgb(36, 43, 53) 0%, rgb(11, 12, 16) 100%);*/
+    padding: 25vh;
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+    background: url(../assets/img/banner-background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.about {
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+    padding-bottom: 25vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.container-pad {
+    padding-left: 10vh; 
+    padding-right: 10vh; 
+}
