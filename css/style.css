@@ -19,6 +19,12 @@ h2.subheading:hover {
 .navbar-translucent {
     opacity: 0.9;
 }
+.full-width {
+    min-width: 100%;
+}
+.full-height {
+    min-height: 100%;
+}
 .banner {
     /*background: -webkit-linear-gradient(324deg, rgb(36, 43, 53) 0%, rgb(11, 12, 16) 100%);
     background: -o-linear-gradient(324deg, rgb(36, 43, 53) 0%, rgb(11, 12, 16) 100%);
@@ -26,8 +32,6 @@ h2.subheading:hover {
     background: -moz-linear-gradient(324deg, rgb(36, 43, 53) 0%, rgb(11, 12, 16) 100%);
     background: linear-gradient(126deg, rgb(36, 43, 53) 0%, rgb(11, 12, 16) 100%);*/
     padding: 25vh;
-    min-width: 100%;
-    min-height: 100%;
     display: block;
     background: url(../assets/img/banner-background.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -35,9 +39,7 @@ h2.subheading:hover {
     -o-background-size: cover;
     background-size: cover;
 }
-.about {
-    min-width: 100%;
-    min-height: 100%;
+.page {
     display: block;
     padding-bottom: 25vh;
     -webkit-background-size: cover;
