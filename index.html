@@ -11,7 +11,7 @@
     _.addEventListener?_.addEventListener("load",b,!1):_.attachEvent("onload",b)})
     (window,document,"script","5205537a25609c1f790000e0");
   </script>
-  
+
   <!-- Google Analytics -->
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -27,11 +27,27 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <script src="js/bootstrap.min.js"></script>
-  
+
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
-  
+
 </head>
+
 <body>
+
+  <!-- Facebook SDK -->
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id)
+    {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=552861384787316";
+      fjs.parentNode.insertBefore(js, fjs);
+    }
+    (document, 'script', 'facebook-jssdk'));
+  </script>
+
   <div class="navbar navbar-fixed-bottom navbar-translucent">
     <div class="container">
 
@@ -46,17 +62,15 @@
           <li><a href="#contact" class="smoothScroll">Talk to us!</a></li>
           <li><a href="#faq" class="smoothScroll">FAQ</a></li>
         </ul>
-        
+
         <a href="members.html" class="btn btn-primary pull-right">Meet our proud members! &rarr;</a>
       </div><!-- /.nav-collapse -->
     </div><!-- /.container -->
   </div><!-- /.navbar -->
 
   <div id="home" class="banner full-width full-height">
-    
   </div>
 
-  
     <div class="page  full-width full-height">
       <div class="container container-pad">
         <a href="#about" class="smoothScroll"><h2 id="about" class="subheading">About</h2></a>
@@ -81,8 +95,10 @@
         </p>
       </div>
     </div>
- 
-  
+
+  <!-- Facebook Like Button -->
+  <div style="margin-left:auto; margin-right:auto;" class="fb-like" data-href="https://www.facebook.com/Bvplug" data-width="100" data-height="40" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-send="true"></div>
+
   <script type="text/javascript" src="js/smoothscroll.js"></script>
 </body>
 </html>
