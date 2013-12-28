@@ -42,6 +42,8 @@ h2.subheading:hover {
 .page {
     display: block;
     padding-bottom: 25vh;
+    
+    background: url(../assets/img/banner-background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
