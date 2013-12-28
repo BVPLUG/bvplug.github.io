@@ -29,12 +29,49 @@
   <script src="js/bootstrap.min.js"></script>
   
   <!--Logo animate-->
-<script>
-$(document).ready(function()
+  <script src="js/animatelogo.js"></script>
+
+  <!-- jquery init-->
+    <script>
+  $(document).ready(function()
   {
-    $("#logo").animate({height:"300px"});
-  });
-</script>
+      //The "buzz" animation 
+      //Bugs etc. to madaan.amanmadaan@gmail.com
+      //setting up animation
+      
+      increment = 1;
+      degree = 0.1; //starting rotation
+      repeat_after = 50; //interval after which to call rotate_elem
+      animation_duration = 100; //the time in which the animation should be finished
+      rotation_threshold = 10; //the amount of rotation after which animation should start again
+      degree_increment = 0.5; //effectively the speed
+      setInterval(
+          function() {
+              increment += 1;
+              degree += degree_increment;
+              degree > rotation_threshold ? degree = 1 : degree = degree
+              increment % 2 == 0 ? rotate_elem(degree, "#logo", animation_duration) : rotate_elem(-degree, "#logo", animation_duration);
+            }, 
+          repeat_after);
+
+       
+      //setting up frames
+      start_index = 0;
+      shuffle_after = 2000;
+      total_frames = 4;
+
+      setInterval(
+          function() {
+              start_index += 1;
+              shuffle(start_index, total_frames);
+           }, 
+           shuffle_after);
+
+ 
+    });
+  
+  </script>
+
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
   
 </head>
@@ -60,7 +97,11 @@ $(document).ready(function()
   </div><!-- /.navbar -->
 
   <div id="home" class="banner full-width full-height">
-        <img src = "assets/img/title.png" id ="logo">
+        <img style = "position : relative;margin-left:40px;margin-bottom:100px" src = "assets/img/gnulinuxfree.jpg" id ="frame1" height = 200 width = 200/>
+        <img style = "position : relative;margin-left:40px;margin-bottom:100px" src = "assets/img/junta.jpg" id ="frame2" height = 200 width = 200>
+        <img style = "position : relative;margin-left:40px;margin-bottom:100px" src = "assets/img/github_logo.jpg" id ="frame3" height = 200 width = 200/>
+        <img style = "position : relative;margin-left:40px;margin-bottom:100px" src = "assets/img/final.jpg" id ="frame4" height = 200 width = 200/>
+        <img style = "position : relative;margin-bottom:200px" src = "assets/img/title.png" id ="logo"/>
     
   </div>
 
